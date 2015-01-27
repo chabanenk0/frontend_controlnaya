@@ -59,11 +59,41 @@ body {
   padding-left: 90px;
   padding-top: 80px;
   .post {
+    padding-bottom: 51px;
+    padding-top: 51px;
     h2 {
       font-family: "Open Sans";
       font-size: 32pt;
     }
+    p {
+      font-size: 17px;
+      line-height: 150%;
+      padding-bottom: 102px;
+    }
+    border-bottom: 1px solid #bababa;
   }
+  .date {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 14px;
+    color: #8f8f8f;
+  }
+  img {
+    width: 100%;
+  }
+  .older-posts, .newer-posts {
+    font-size: 23px;
+    color: #b5b5b5;
+    text-decoration: none;
+  }
+  .older-posts {
+    float: left;
+  }
+  .newer-posts {
+    float: right;
+  }
+
 }
 
 /*----------------------------------------------------------------------------------*/
