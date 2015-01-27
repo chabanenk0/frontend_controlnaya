@@ -34,15 +34,16 @@ body {
         font-size: 15px;
         color: #909090;
         margin-left: 30px;
+        text-decoration: none;
       }
       a:hover {
         color: #ffffff;
+        text-decoration: underline;
       }
       a.active {
         color: #ffffff;
+        font-weight: bold;
       }
-
-
     }
   }
 
@@ -82,6 +83,10 @@ body {
   img {
     width: 100%;
   }
+  .navigation {
+    display: block;
+    margin-top: 80px;
+  }
   .older-posts, .newer-posts {
     font-size: 23px;
     color: #b5b5b5;
@@ -103,7 +108,85 @@ body {
 .sidebar {
   float: right;
   overflow: hidden;
-  width: 396px;
+  width: 297px;
+  background-color: #f6f6f6;
+  padding: 63px 44px;
+  .sidebar-block {
+    padding-bottom: 38px;
+    border-bottom: 1px solid #dadada;
+    margin-bottom: 35px;
+  }
+  h2 {
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 17px;
+    display: block;
+    padding-bottom: 5px;
+  }
+  p {
+    font-family: "Open Sans";
+    font-size: 15px;
+    line-height: 150%;
+    color: #6e6e6e;
+  }
+  li {
+    margin: 5px 0px;
+    & a {
+      font-family: "Open Sans";
+      font-size: 15px;
+      color: #6e6e6e;
+    }
+  }
+  input[type=text] {
+    display: block;
+    float: left;
+    border: medium none;
+    border-radius: 0px;
+    height: 37px;
+    width: 227px;
+    padding-left: 14px;
+    & ::-webkit-input-placeholder { font-size: 15px; }
+    & ::-moz-placeholder { font-size: 15px; } /* firefox 19+ */
+    & :-ms-input-placeholder { font-size: 15px; } /* ie */
+    &:-moz-placeholder { font-size: 15px; }
+  }
+  input[type=submit] {
+    display: block;
+    overflow: hidden;
+    height: 37px;
+    width: 37px;
+    margin-top: 20px;
+  }
+  input#subscribe-submit {
+    background: URL('../images/subscribe_icon.png') no-repeat;
+  }
+  input#search-submit {
+    background: URL('../images/search_icon.png') no-repeat;
+  }
+  .subscribe-block {
+    .social-list {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 31px;
+    }
+    .social-row {
+      a {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        margin-left: 11px;
+        &.rss {
+          background: URL('../images/rss_icon.png') no-repeat;
+        }
+        &.linkedin {
+          background: URL('../images/linkedin_icon.png') no-repeat;
+        }
+        &.twitter {
+          background: URL('../images/twitter_icon.png') no-repeat;
+        }
+      }
+    }
+  }
 }
 
 /*----------------------------------------------------------------------------------*/
@@ -112,4 +195,58 @@ body {
 
 .footer {
   clear: both;
+  .social-list {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .social-row {
+    padding-top: 37px;
+    text-align: center;
+    background-color: #00a2f2;
+    height: 77px;
+    a {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      &.linkedin {
+        background: URL('../images/linkedin_icon2.png') no-repeat;
+      }
+      &.twitter {
+        background: URL('../images/twitter_icon2.png') no-repeat;
+      }
+      &.email {
+        background: URL('../images/mail_icon2.png') no-repeat;
+      }
+    }
+
+  }
+  background-color: #018dd2;
+  .copyright {
+    display: block;
+    margin-left: 68px;
+    margin-top: 30px;
+    width: 50%;
+    float: left;
+    color: #fff;
+  }
+  .menu {
+    overflow: hidden;
+    height: 73px;
+    margin-top: 30px;
+    li {
+      float: left;
+      margin-right: 38px;
+      a {
+        font-size: 12px;
+        color: #fff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      a.active {
+        font-weight: bold;
+      }
+    }
+  }
 }
